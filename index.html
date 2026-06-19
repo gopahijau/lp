@@ -26,6 +26,235 @@
     
       gtag('config', 'G-W695KWCTC1');
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="--^^^^-^^^^-^^^^-^^^"> ```
+
+Lalu ubah dan selipkan kodenya menjadi seperti ini:
+
+```html
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-primary: #0a1128;
+            --bg-secondary: #101f42;
+            --accent-cyan: #00f0ff;
+            --accent-blue: #0072ff;
+            --text-main: #ffffff;
+            --text-muted: #8fa0c4;
+            --glass-bg: rgba(16, 31, 66, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* --- Page Loader --- */
+        #page-loader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg-primary);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loader-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .loader-card strong { color: var(--text-main); display: block; margin-top: 15px; }
+        .loader-card small { color: var(--accent-cyan); }
+
+        /* --- Navbar (Glassmorphism) --- */
+        .glass-nav {
+            background: rgba(10, 17, 40, 0.75) !important;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .site-logo {
+            max-height: 45px;
+            filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.3));
+        }
+
+        /* --- Hero Section --- */
+        .hero-blue {
+            background: radial-gradient(circle at 80% 20%, #1e3c72 0%, var(--bg-primary) 50%);
+            position: relative;
+            padding: 60px 0;
+        }
+        .hero-pill {
+            background: linear-gradient(90deg, rgba(0,240,255,0.2) 0%, rgba(0,114,255,0.2) 100%);
+            border: 1px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+        .text-blue-soft {
+            color: var(--text-muted) !important;
+        }
+
+        /* --- Tombol Kustom --- */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
+            border: none;
+            color: #000;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 240, 255, 0.6);
+            color: #000;
+        }
+        .btn-outline-light {
+            border: 1px solid var(--glass-border);
+            background: rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+        }
+        .btn-outline-light:hover {
+            background: var(--text-main);
+            color: var(--bg-primary);
+            transform: translateY(-2px);
+        }
+
+        /* --- Hero Slider Panel --- */
+        .hero-panel {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 15px;
+        }
+        .hero-panel-top {
+            display: flex;
+            align-items: center;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--glass-border);
+            margin-bottom: 15px;
+        }
+        .hero-panel-top span {
+            width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px;
+        }
+        .hero-panel-top span:nth-child(1) { background: #ff5f56; }
+        .hero-panel-top span:nth-child(2) { background: #ffbd2e; }
+        .hero-panel-top span:nth-child(3) { background: #27c93f; }
+        .hero-panel-top strong { color: var(--text-muted); font-size: 0.9rem; }
+
+        /* --- Carousel & Overlay Bukti --- */
+        .carousel-item img {
+            border-radius: 12px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .hero-proof-slide {
+            position: relative;
+            display: block;
+            text-decoration: none;
+        }
+        .hero-proof-overlay {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(10,17,40,0.95) 0%, rgba(10,17,40,0) 100%);
+            padding: 20px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        .hero-proof-overlay h3 {
+            font-size: 1rem;
+            color: var(--text-main);
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        /* --- Section Header --- */
+        .section-heading span {
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            display: block;
+        }
+        .section-heading h2 {
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-heading h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; width: 50px; height: 3px;
+            background: var(--accent-cyan);
+            border-radius: 2px;
+        }
+
+        /* --- Arsip Berdasarkan Tanggal (Cards) --- */
+        .date-card-modern {
+            background: var(--bg-secondary);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .date-card-modern::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--accent-blue);
+            transition: all 0.3s ease;
+        }
+        .date-card-modern:hover {
+            transform: translateY(-5px);
+            background: rgba(16, 31, 66, 0.9);
+            border-color: rgba(0, 240, 255, 0.3);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .date-card-modern:hover::before {
+            background: var(--accent-cyan);
+            height: 100%;
+        }
+        .date-card-modern strong {
+            color: var(--text-main);
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        .date-card-modern small {
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        /* --- Footer --- */
+        .footer-blue {
+            background: #060b1a;
+            border-top: 1px solid var(--glass-border);
+            font-size: 0.9rem;
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W695KWCTC1"></script>
 </head>
 <body>
 
