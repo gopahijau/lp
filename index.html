@@ -2,27 +2,9 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>WAWASAN4D | Pusat Informasi Bukti Jackpot Member Terbaru | Arsip Kemenangan Harian | Dokumentasi Event Spesial</title>
+    <title>WAWASAN4D | Pusat Informasi Bukti Jackpot Member Terbaru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="WAWASAN4D adalah platform digital yang berfokus pada memberikan layanan eksklusif untuk setiap anggota. Kami percaya bahwa setiap anggota kami pantas mendapatkan layanan terbaik, sehingga kami berdedikasi untuk memberikan pengalaman yang tak tertandingi dalam industri.">
-    <link rel="canonical" href="https://wawasankini.com">
-    <link rel="amphtml" href="https://wawasanhasil.com">    
-
-    <meta property="og:title" content="WAWASAN4D | Pusat Informasi Bukti Jackpot Member Terbaru | Arsip Kemenangan Harian | Dokumentasi Event Spesial">
-    <meta property="og:description" content="WAWASAN4D adalah platform digital yang berfokus pada memberikan layanan eksklusif untuk setiap anggota. Kami percaya bahwa setiap anggota kami pantas mendapatkan layanan terbaik, sehingga kami berdedikasi untuk memberikan pengalaman yang tak tertandingi dalam industri.">
-    <meta property="og:image" content="https://i.postimg.cc/cHppsDVq/logo-web.png">
-    <meta property="og:url" content="https://shorthe.link/wawasan4dvip">
-    <meta property="og:type" content="website">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W695KWCTC1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-W695KWCTC1');
-    </script>
     
     <style>
         :root {
@@ -37,52 +19,26 @@
         }
 
         body {
-            background-color: var(--bg-primary);
-            color: var(--text-main);
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             overflow-x: hidden;
+            margin: 0;
+            padding: 0;
         }
 
-        /* --- Page Loader --- */
-        #page-loader {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: var(--bg-primary);
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.5s ease, visibility 0.5s;
+        .desktop-view {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            display: block; 
         }
-        .loader-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            padding: 2rem;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        }
-        .loader-card strong { color: var(--text-main); display: block; margin-top: 15px; }
-        .loader-card small { color: var(--accent-cyan); }
-
-        /* --- Navbar (Glassmorphism) --- */
         .glass-nav {
             background: rgba(10, 17, 40, 0.75) !important;
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             border-bottom: 1px solid var(--glass-border);
         }
-        .site-logo {
-            max-height: 45px;
-            filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.3));
-        }
-
-        /* --- Hero Section --- */
+        .site-logo { max-height: 45px; }
         .hero-blue {
             background: radial-gradient(circle at 80% 20%, #1e3c72 0%, var(--bg-primary) 60%);
-            position: relative;
             padding: 60px 0;
         }
         .hero-pill {
@@ -93,360 +49,273 @@
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
-            letter-spacing: 1px;
-            display: inline-block;
         }
-        .text-blue-soft {
-            color: var(--text-muted) !important;
-        }
-
-        /* --- Tombol Kustom --- */
         .btn-primary-custom {
             background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
-            border: none;
-            color: #000 !important;
-            font-weight: 600;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: none; color: #000 !important; font-weight: 600;
             box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
         }
-        .btn-primary-custom:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 240, 255, 0.6);
-        }
         .btn-outline-custom {
-            border: 1px solid var(--glass-border);
-            background: rgba(255,255,255,0.05);
-            color: var(--text-main) !important;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: #fff;
         }
-        .btn-outline-custom:hover {
-            background: var(--text-main);
-            color: var(--bg-primary) !important;
-            transform: translateY(-3px);
-        }
-
-        /* --- Hero Slider Panel --- */
         .hero-panel {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            overflow: hidden;
-            padding: 15px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            background: var(--glass-bg); backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border); border-radius: 20px; padding: 15px;
         }
-        .hero-panel-top {
-            display: flex;
-            align-items: center;
-            padding-bottom: 12px;
-            border-bottom: 1px solid var(--glass-border);
-            margin-bottom: 15px;
-        }
-        .hero-panel-top span {
-            width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px;
-        }
-        .hero-panel-top span:nth-child(1) { background: #ff5f56; }
-        .hero-panel-top span:nth-child(2) { background: #ffbd2e; }
-        .hero-panel-top span:nth-child(3) { background: #27c93f; }
-        .hero-panel-top strong { color: var(--text-muted); font-size: 0.9rem; }
-
-        /* --- Carousel & Overlay Bukti --- */
-        .carousel-item img {
-            border-radius: 12px;
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-        }
+        .carousel-item img { border-radius: 12px; width: 100%; height: auto; }
         .hero-proof-overlay {
-            position: absolute;
-            bottom: 0; left: 0; right: 0;
+            position: absolute; bottom: 0; left: 0; right: 0;
             background: linear-gradient(to top, rgba(10,17,40,0.95) 0%, rgba(10,17,40,0) 100%);
-            padding: 20px;
-            border-bottom-left-radius: 12px;
-            border-bottom-right-radius: 12px;
+            padding: 20px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;
         }
-        .hero-proof-overlay h3 {
-            font-size: 0.9rem;
-            color: var(--text-main);
-            margin: 0;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-            line-height: 1.4;
-        }
-
-        /* --- Section Header --- */
-        .section-heading span {
-            color: var(--accent-cyan);
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            display: block;
-        }
-        .section-heading h2 {
-            font-weight: 700;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-        .section-heading h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 0; width: 50px; height: 3px;
-            background: var(--accent-cyan);
-            border-radius: 2px;
-        }
-
-        /* --- FAQ Accordion Modern --- */
-        .faq-wrapper {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+        .hero-proof-overlay h3 { font-size: 0.9rem; color: #fff; margin: 0; }
+        .section-heading span { color: var(--accent-cyan); text-transform: uppercase; font-size: 0.8rem; display: block; }
+        .section-heading h2 { font-weight: 700; position: relative; padding-bottom: 10px; color: #fff;}
+        .section-heading h2::after { content: ''; position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: var(--accent-cyan); }
+        
         .accordion-item-custom {
-            background: var(--bg-secondary);
-            border: 1px solid var(--glass-border);
-            border-radius: 15px !important;
-            margin-bottom: 15px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        .accordion-item-custom:hover {
-            border-color: rgba(0, 240, 255, 0.3);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            background: var(--bg-secondary); border: 1px solid var(--glass-border); border-radius: 15px !important; margin-bottom: 15px; overflow: hidden;
         }
         .accordion-button-custom {
-            background: transparent;
-            color: var(--text-main);
-            font-weight: 600;
-            padding: 20px;
-            border: none;
-            width: 100%;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
+            background: transparent; color: #fff; font-weight: 600; padding: 20px; border: none; width: 100%; text-align: left; display: flex; justify-content: space-between;
         }
-        .accordion-button-custom:not(.collapsed) {
-            color: var(--accent-cyan);
-            box-shadow: none;
-        }
-        .accordion-button-custom::after {
-            content: '+';
-            font-size: 1.5rem;
-            color: var(--accent-cyan);
-            transition: transform 0.3s ease;
-        }
-        .accordion-button-custom:not(.collapsed)::after {
-            transform: rotate(45deg);
-            content: '+';
-        }
-        .accordion-body-custom {
-            padding: 0 20px 20px 20px;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
+        .accordion-button-custom::after { content: '+'; color: var(--accent-cyan); font-size: 1.2rem; }
+        .accordion-body-custom { padding: 0 20px 20px 20px; color: var(--text-muted); }
+        .footer-blue { background: #060b1a; border-top: 1px solid var(--glass-border); color: var(--text-muted); }
 
-        /* --- Footer --- */
-        .footer-blue {
-            background: #060b1a;
-            border-top: 1px solid var(--glass-border);
+        .mobile-view {
+            display: none; /* Sembunyikan default (di desktop) */
+            background-color: #f3f6f9; /* Latar belakang terang keabuan */
+            color: #1a202c;
+            min-height: 100vh;
+        }
+        .mobile-header-bar {
+            background-color: #0d3895; /* Header biru pekat atas */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.75rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .mobile-logo-section {
+            text-align: center;
+            padding: 25px 0 10px 0;
+        }
+        .mobile-logo-text {
+            font-size: 2.8rem;
+            font-weight: 900;
+            font-style: italic;
+            color: #333;
+            text-shadow: 2px 2px 0px #ccc;
+            margin: 0;
+        }
+        .mobile-sub-tag {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #555;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        .mobile-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 20px 40px 20px;
+        }
+        .mobile-link-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff !important;
+            font-weight: bold;
             font-size: 0.9rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+            text-transform: uppercase;
         }
-        
-        .app-hidden {
-            opacity: 0;
-            transition: opacity 0.5s ease;
+        .mobile-link-btn:active { transform: scale(0.98); }
+        .btn-red { background-color: #e54d4d; }
+        .btn-green { background-color: #4cd137; }
+        .btn-cyan { background-color: #4bcffa; }
+
+        .mobile-faq-title {
+            text-align: center;
+            font-weight: bold;
+            color: #0d3895;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        .app-visible {
-            opacity: 1;
+        .mobile-faq-item {
+            background-color: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            overflow: hidden;
+        }
+        .mobile-faq-btn {
+            width: 100%; background: transparent; border: none; padding: 15px;
+            text-align: left; font-size: 0.8rem; font-weight: 600; color: #333;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .mobile-faq-btn::after { content: '+'; color: #0d3895; font-size: 1.1rem; font-weight: bold; }
+        .mobile-faq-body { padding: 0 15px 15px 15px; font-size: 0.78rem; color: #666; line-height: 1.5; }
+
+        @media (max-width: 767px) {
+            .desktop-view { display: none !important; }
+            .mobile-view { display: block !important; }
         }
     </style>
 </head>
 <body>
 
-<div id="page-loader">
-    <div class="loader-card">
-        <div class="spinner-border text-info" role="status"></div>
-        <strong>Loading data...</strong>
-        <small>Menyiapkan feed Telegram</small>
-    </div>
-</div>
-
-<div id="app" class="app-hidden">
-
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="https://wawasankini.com">
-                <img src="https://i.postimg.cc/cHppsDVq/logo-web.png" alt="WAWASAN4D" class="site-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="mainNav" class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto gap-lg-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://shorthe.link/wawasan4dvip">Home</a>
-                    </li>
-                </ul>
+    <div class="desktop-view">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#"><img src="https://i.postimg.cc/cHppsDVq/logo-web.png" alt="Logo" class="site-logo"></a>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <section class="hero-blue">
-        <div class="container py-4 py-lg-5">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-7 order-2 order-lg-1">
-                    <span class="hero-pill mb-3">WAWASAN4D Info Jackpot | Update Setiap Hari</span>
-                    <h1 class="display-5 fw-bold mt-2 mb-3">
-                        WAWASAN4D | Situs Bettingan Online Terpercaya di Indonesia.
-                    </h1>
-                    <p class="lead text-blue-soft mb-4">
-                        Dapatkan layanan eksklusif hanya di WAWASAN4D! Pilihan utama pelanggan Indonesia untuk layanan premium dengan performa transaksi super kilat.
-                    </p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="https://shorthe.link/rtp" target="_blank" class="btn btn-primary-custom btn-lg rounded-pill px-4 fs-6">RTP SLOT</a>
-                        <a href="https://shorthe.link/wawasan4dvip" target="_blank" class="btn btn-primary-custom btn-lg rounded-pill px-4 fs-6">LOGIN</a>
-                        <a href="https://shorthe.link/alterwawasan4d" target="_blank" class="btn btn-outline-custom btn-lg rounded-pill px-4 fs-6">DAFTAR</a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-5 order-1 order-lg-2">
-                    <div class="hero-panel">
-                        <div class="hero-panel-top">
-                            <span></span><span></span><span></span>
-                            <strong class="ms-1">Live Feed Promo & Jackpot</strong>
+        <section class="hero-blue">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <span class="hero-pill mb-3">WAWASAN4D Info Jackpot | Update Setiap Hari</span>
+                        <h1 class="display-5 fw-bold mt-2 mb-3">WAWASAN4D | Situs Bettingan Online Terpercaya di Indonesia.</h1>
+                        <p class="lead text-blue-soft mb-4">Dapatkan layanan premium dengan performa transaksi super kilat.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn btn-primary-custom btn-lg rounded-pill px-4">RTP SLOT</a>
+                            <a href="#" class="btn btn-primary-custom btn-lg rounded-pill px-4">LOGIN</a>
+                            <a href="#" class="btn btn-outline-custom btn-lg rounded-pill px-4">DAFTAR</a>
                         </div>
-                        <div id="promoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="position-relative">
-                                        <img src="https://i.postimg.cc/0yj7x7sP/promo.jpg" alt="Promo WAWASAN4D">
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="hero-panel">
+                            <div id="desktopCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://i.postimg.cc/0yj7x7sP/promo.jpg" alt="Promo">
                                         <div class="hero-proof-overlay">
-                                            <span class="badge rounded-pill text-bg-info text-dark mb-2 fw-bold">EVENT SPESIAL</span>
-                                            <h3>WASPADA PENIPUAN MENGATASNAMAKAN ADMIN WAWASAN4D.<br>TELEGRAM RESMI: https://shorthe.link/telegram</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="position-relative">
-                                        <img src="https://i.postimg.cc/0yj7x7sP/promo.jpg" style="filter: hue-rotate(45deg);" alt="Bukti Jackpot WAWASAN4D">
-                                        <div class="hero-proof-overlay">
-                                            <span class="badge rounded-pill text-bg-primary mb-2 fw-bold">BUKTI JACKPOT</span>
-                                            <h3>Selamat kepada Member ID ****99 berhasil JP Paus di pasaran resmi hari ini!</h3>
+                                            <h3>WASPADA PENIPUAN MENGATASNAMAKAN ADMIN WAWASAN4D</h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="py-5 bg-gradient">
-        <div class="container">
-            <div class="section-heading text-center mb-5">
-                <span>Pertanyaan Umum</span>
-                <h2>FAQ WAWASAN4D</h2>
+        <section class="py-5">
+            <div class="container" style="max-width: 800px;">
+                <div class="section-heading text-center mb-4"><span>INFO UTAMA</span><h2>FAQ WAWASAN4D</h2></div>
+                <div class="accordion" id="faqDesktopParent">
+                    <div class="accordion-item-custom">
+                        <button class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fd1">1. Apa yang menjadi keunggulan utama WAWASAN4D?</button>
+                        <div id="fd1" class="collapse" data-bs-parent="#faqDesktopParent"><div class="accordion-body-custom">Sistem transaksi super cepat hitungan detik dan layanan eksklusif.</div></div>
+                    </div>
+                    <div class="accordion-item-custom">
+                        <button class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fd2">2. Apakah teknologi WAWASAN4D aman?</button>
+                        <div id="fd2" class="collapse" data-bs-parent="#faqDesktopParent"><div class="accordion-body-custom">Tentu saja, kami menggunakan teknologi enkripsi keamanan tingkat tinggi.</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-blue py-4 text-center">
+            <div class="container"><span>&copy; 2026 WAWASAN4D. All Rights Reserved.</span></div>
+        </footer>
+    </div>
+
+
+    <div class="mobile-view">
+        <div class="mobile-header-bar">Platform Hiburan Digital</div>
+        
+        <div class="mobile-container">
+            <div class="mobile-logo-section">
+                <h1 class="mobile-logo-text">Wasiat4D</h1>
             </div>
             
-            <div class="faq-wrapper">
-                <div class="accordion" id="faqAccordion">
-                    
-                    <div class="accordion-item-custom">
-                        <button class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                            1. Apa yang menjadi keunggulan utama WAWASAN4D dibanding platform lain?
-                        </button>
-                        <div id="faq1" class="collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body-custom">
-                                Keunggulan utama kami terletak pada sistem transaksi super cepat (hanya hitungan detik) dan layanan VIP eksklusif untuk setiap member.
-                            </div>
+            <div class="mobile-sub-tag">Akses Mudah & Aman</div>
+
+            <a href="https://shorthe.link/alterwawasan4d" target="_blank" class="mobile-link-btn btn-red">Link Alternatif Wasiat4D</a>
+            <a href="https://shorthe.link/wawasan4dvip" target="_blank" class="mobile-link-btn btn-green">Live Chat Wasiat4D</a>
+            <a href="https://shorthe.link/telegram" target="_blank" class="mobile-link-btn btn-cyan">Whatsapp Wasiat4D</a>
+
+            <div class="mobile-faq-title">FAQ WAWASAN4D</div>
+
+            <div class="accordion" id="faqMobileParent">
+                
+                <div class="mobile-faq-item">
+                    <button class="mobile-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fm1">
+                        1. Apa yang menjadi keunggulan utama WAWASAN4D dibanding platform lain?
+                    </button>
+                    <div id="fm1" class="collapse" data-bs-parent="#faqMobileParent">
+                        <div class="mobile-faq-body">
+                            Keunggulan utama kami terletak pada sistem transaksi super cepat (hanya hitungan detik) dan layanan VIP eksklusif untuk setiap member.
                         </div>
                     </div>
-
-                    <div class="accordion-item-custom">
-                        <button class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                            2. Bagaimana performa server WAWASAN4D saat digunakan dalam waktu lama?
-                        </button>
-                        <div id="faq2" class="collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body-custom">
-                                Server kami menggunakan infrastruktur mutakhir yang menjamin stabilitas tinggi tanpa lag meskipun digunakan dalam durasi panjang.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item-custom">
-                        <button class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                            3. Apakah teknologi WAWASAN4D berpengaruh pada kenyamanan bermain?
-                        </button>
-                        <div id="faq3" class="collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body-custom">
-                                Sangat berpengaruh. Teknologi terbaru kami memastikan visual yang halus, navigasi ringan, dan respons permainan instan.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item-custom">
-                        <button class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                            4. Apakah WAWASAN4D aman digunakan oleh pemain aktif?
-                        </button>
-                        <div id="faq4" class="collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body-custom">
-                                Tentu saja. Kami menggunakan enkripsi tingkat militer untuk melindungi seluruh data pribadi dan keamanan transaksi setiap member.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item-custom">
-                        <button class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                            5. Siapa yang cocok menggunakan WAWASAN4D?
-                        </button>
-                        <div id="faq5" class="collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body-custom">
-                                WAWASAN4D cocok untuk siapa saja yang menginginkan hiburan digital profesional dengan pengalaman bermain yang lancar dan aman.
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="mobile-faq-item">
+                    <button class="mobile-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fm2">
+                        2. Bagaimana performa server WAWASAN4D saat digunakan dalam waktu lama?
+                    </button>
+                    <div id="fm2" class="collapse" data-bs-parent="#faqMobileParent">
+                        <div class="mobile-faq-body">
+                            Server kami menggunakan infrastruktur mutakhir yang menjamin stabilitas tinggi tanpa lag meskipun digunakan dalam durasi panjang.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-faq-item">
+                    <button class="mobile-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fm3">
+                        3. Apakah teknologi WAWASAN4D berpengaruh pada kenyamanan bermain?
+                    </button>
+                    <div id="fm3" class="collapse" data-bs-parent="#faqMobileParent">
+                        <div class="mobile-faq-body">
+                            Sangat berpengaruh. Teknologi terbaru kami memastikan visual yang halus, navigasi ringan, dan respons permainan instan.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-faq-item">
+                    <button class="mobile-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fm4">
+                        4. Apakah WAWASAN4D aman digunakan oleh pemain aktif?
+                    </button>
+                    <div id="fm4" class="collapse" data-bs-parent="#faqMobileParent">
+                        <div class="mobile-faq-body">
+                            Tentu saja. Kami menggunakan enkripsi tingkat militer untuk melindungi seluruh data pribadi dan keamanan transaksi setiap member.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-faq-item">
+                    <button class="mobile-faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fm5">
+                        5. Siapa yang cocok menggunakan WAWASAN4D?
+                    </button>
+                    <div id="fm5" class="collapse" data-bs-parent="#faqMobileParent">
+                        <div class="mobile-faq-body">
+                            WAWASAN4D cocok untuk siapa saja yang menginginkan hiburan digital profesional dengan pengalaman bermain yang lancar dan aman.
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer class="footer-blue py-4">
-        <div class="container text-center">
-            <span class="text-blue-soft">&copy; 2026 WAWASAN4D. All Rights Reserved.</span>
-        </div>
-    </footer>
-
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const loader = document.getElementById('page-loader');
-        const app = document.getElementById('app');
-        
-        // Simulasi loading screen halus
-        setTimeout(() => {
-            if(loader && app) {
-                loader.style.opacity = '0';
-                loader.style.visibility = 'hidden';
-                app.classList.remove('app-hidden');
-                app.classList.add('app-visible');
-            }
-        }, 800);
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
